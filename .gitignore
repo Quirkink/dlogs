@@ -1,0 +1,15 @@
+build/
+dist/
+env/
+*.egg-info
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
+.DS_Store
+.venv/
+.pytest_cache/
+.vscode/
+poetry.lock
+__pycache__/

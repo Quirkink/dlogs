@@ -1,0 +1,29 @@
+[project]
+name = "dlogs"
+version = "1.0.0"
+description = "A tool for analyzing and reporting on log files."
+readme = "README.md"
+authors = [
+    {name = "Aiko Sora",email = "altairteam@bk.ru"}
+]
+requires-python = ">=3.11,<3.12"
+dependencies = [
+]
+
+[project.urls]
+Repository = "https://github.com/quirkink/dlogs"
+
+[project.scripts]
+dlogs = "dlogs.main:main"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-l"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+pylint = "^3.3.6"
