@@ -20,6 +20,9 @@ Issues = "https://github.com/quirkink/dlogs/issues"
 [project.scripts]
 dlogs = "dlogs.main:main"
 
+[tool.setuptools]
+packages = ["dlogs"]
+
 [build-system]
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
