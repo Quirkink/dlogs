@@ -2,10 +2,10 @@ name: PyLint
 
 on:
   push:
-    branches:
-      - main
-  release:
-    types: [published]
+    branches: [ "main" ]
+
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
   lint:
@@ -27,4 +27,4 @@ jobs:
         pip install pylint
     - name: Analysing the code with pylint
       run: |
-        pylint dlogs/ --verbose
+        pylint dlogs --verbose
