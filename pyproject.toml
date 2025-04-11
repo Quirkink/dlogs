@@ -1,17 +1,21 @@
 [project]
 name = "dlogs"
-version = "1.0.0"
+version = "1.0.1"
 description = "A tool for analyzing and reporting on log files."
 readme = "README.md"
 authors = [
     {name = "Aiko Sora",email = "altairteam@bk.ru"}
 ]
-requires-python = ">=3.11,<3.12"
+requires-python = ">=3.11"
 dependencies = [
 ]
+license = "MIT"
+license-files = ["LICENSE"]
 
 [project.urls]
 Repository = "https://github.com/quirkink/dlogs"
+Homepage = "https://github.com/quirkink/dlogs"
+Issues = "https://github.com/quirkink/dlogs/issues"
 
 [project.scripts]
 dlogs = "dlogs.main:main"
